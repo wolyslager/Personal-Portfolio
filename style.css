@@ -154,6 +154,7 @@ header{
 
 .logo{
 	max-width: 100px;
+	height: 10px;
 }
 
 .nav{
@@ -465,5 +466,85 @@ header{
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.skill-html-node{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-js-pg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-react-rest{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-css-express{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill-img{
+	height: 5em;
+	width: 5em;
+	margin-bottom: 1em;
+}
+
+.skill{
+	padding: 2em;
+	padding-top: 0;
+	text-align: center;
+}
+
+.skill-img-react{
+	height: 6em;
+}
+
+.skill-img-css{
+	height: 6em;
+}
+
+.skill-react{
+	text-align: center;
+	margin-top: 0;
+}
+
+.skill-node{
+	text-align: center;
+}
+
+.skill-express{
+	text-align: center;
+}
+
+.skill-img-node{
+	height: 6em;
+}
+
+.skill-img-rest{
+	width: 5em;
+}
+
+.skill-img-express{
+	width: 9em;
 }
 
