@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/86857d85fd.js" crossorigin="anonymous"></script>
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -21,9 +21,9 @@
 	    </button>
 	    <nav class="nav">
 	    	<ul class="nav__list">
-	    		<li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-	    		<li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
-	    		<li class="nav__item"><a href="#about" class="nav__link">My Skills</a></li>
+	    		<li class="nav__item"><a href="" class="nav__link">Home</a></li>
+	    		<li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+	    		<li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
 	    		<li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
 	    	</ul>
 	    </nav>
@@ -43,7 +43,7 @@
 		<div class="services">
 			<div class="service">
 				<h3>Background</h3>
-				<p>
+				<p class="about-me-text">
 					I am a self-taught developer who is passionate about learning and 
 					building full-stack applications. I received my BS in Industrial & Systems
 					Engineering from Texas A&M University in August 2018 and have been developing
@@ -58,7 +58,7 @@
 
 			<div class="service">
 					<h3>Why Development?</h3>
-					<p>
+					<p class="about-me-text">
 						Software development is the only skill that allows someone to 
 						build a product, service, or entertainment application and deploy it 
 						to the web for the entire world to access with nothing but a computer
@@ -132,7 +132,123 @@
 				<img src="img/screenshot.png" class="portfolio__img">
 			</a>
 		</div>
+		<div class="descriptions-container">
+			<div class="twitter-description">
+				<h3 class="desc-title">Description</h3>
+				<p>This application lets you search for Tweets by user or by keyword/topic. The search will display the most recent and relevant tweets based on the type of search you perform. You may also choose to look at random tweets.</p>
+				<h3 class="tech-title">Technologies</h3>
+				<p>The Twitter API App has a React front end that communicates with a Node Express server. The server makes requests to the Twitter API and the responses are then rendered here!</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#twitter">
+				  View Project
+				</button>
+			</div>
+			<div class="snake-description">
+				<h3 class="desc-title">Description</h3>
+				<p>This application let's you play the classic Snake Game! You can control the snake with the arrow keys
+				to catch as many apples as you can. Let's see if you can beat the high score.</p>
+				<h3 class="tech-title">Technologies</h3>
+				<p>The Snake Game App is built with CSS, HTML, and Vanilla JavaScript.</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#snake">
+				  View Project
+				</button>
+			</div>
+			<div class="facedetection-description">
+				<h3 class="desc-title">Description</h3>
+				<p>This application allows a user to register an account, login, and submit image URLs to be analyzed by a face detection algorithm (courtesy of the Clarifai API).</p>
+				<h3 class="tech-title">Technologies</h3>
+				<p>The Face Detection App has a React front end that communicates with a Node Express server. The server communicates with a PostgresSQL database to validate user login.</p>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#facedetection">
+				  View Project
+				</button>
+			</div>
+	</div>
 	</section>
+
+	<!-- Modal Twitter API APP -->
+	<div class="modal fade" id="twitter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document" style="width:1250px;">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="img/twitter.png" class="portfolio__img">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="..." alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="..." alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal Snake -->
+	<div class="modal fade" id="snake" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <img src="img/snake.png" class="portfolio__img">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal facedetection -->
+	<div class="modal fade" id="facedetection" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <img src="img/screenshot.png" class="portfolio__img">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -151,7 +267,9 @@
 
 		</ul>
 	</footer>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script  type="text/javascript" src="index.js"></script>
 </body>
 </html>
